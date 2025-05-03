@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, redirect, url_for
 import csv
 
 app = Flask(__name__)
@@ -20,6 +20,10 @@ def load_assets():
 @app.route("/api/assets", methods=["GET"])
 def get_assets():
     return jsonify(load_assets())
+
+@app.route("/", methods=["GET"])
+def home():
+    return redirect(url_for('get_assets'))
 
 if __name__ == "__main__":
     app.run(debug=True)
