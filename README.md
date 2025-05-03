@@ -3,7 +3,6 @@
 
 This project provides a simple REST API to serve asset data (e.g. substations, run-of-river plants) from a CSV file. It is built using **Flask**, containerized using **Docker**, and deployed on **Vercel**.
 
----
 
 ## 📦 Features
 
@@ -13,7 +12,6 @@ This project provides a simple REST API to serve asset data (e.g. substations, r
 - Deployed with Vercel's custom Docker runtime
 - CORS-enabled for frontend integration
 
----
 
 ## 🔧 Tech Stack
 
@@ -23,7 +21,6 @@ This project provides a simple REST API to serve asset data (e.g. substations, r
 - Docker
 - Vercel (for deployment)
 
----
 
 ## 🚀 Live Demo
 
@@ -32,7 +29,6 @@ This project provides a simple REST API to serve asset data (e.g. substations, r
 
 > *(Replace with your actual deployed URL after Vercel deployment)*
 
----
 
 ## 📁 Project Structure
 
@@ -47,7 +43,6 @@ axpo-drone-data-api/
 └── README.md
 ```
 
----
 
 ## ⚙️ Getting Started Locally
 
@@ -69,7 +64,6 @@ docker run -p 5000:5000 drone-api
 
 Visit: [http://localhost:5000/api/assets](http://localhost:5000/api/assets)
 
----
 
 ## ☁️ Deploying to Vercel
 
@@ -88,7 +82,6 @@ vercel --prod
 
 Vercel will detect the `Dockerfile` and deploy it as a container.
 
----
 
 ## 🔄 API Endpoint
 
