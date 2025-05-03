@@ -111,22 +111,3 @@ Returns a list of all assets with metadata.
 ]
 ```
 
----
-
-## 🔐 CORS Support
-
-This API supports cross-origin requests out of the box via `flask-cors`, making it frontend-ready.
-
----
-
-## 📃 License
-
-MIT License
-
----
-
-## 👤 Author
-
-**Karl Longin**
-
-Want to contribute or customize this? Feel free to fork the repo or reach out!
