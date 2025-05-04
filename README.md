@@ -1,19 +1,15 @@
 
 # Axpo Drone Data API
 
-This project provides a simple REST API to serve asset data (e.g. substations, run-of-river plants) from a CSV file. It is built using **Flask**, containerized using **Docker**, and deployed on **Vercel**.
+Simple project that provides a simple REST API to serve asset data from a CSV file. It is built using **Flask**, containerized using **Docker**, and deployed on **Vercel**.
 
 
-## 📦 Features
+## Features
 
 - Serves a CSV dataset as a JSON API
-- Built with Flask and Gunicorn
-- Dockerized for portability
-- Deployed with Vercel's custom Docker runtime
-- CORS-enabled for frontend integration
+- Built with Flask, Flask CORS, Gunicorn, Vercel
 
-
-## 🔧 Tech Stack
+## Tech Stack
 
 - Python 3.11
 - Flask
@@ -22,15 +18,13 @@ This project provides a simple REST API to serve asset data (e.g. substations, r
 - Vercel (for deployment)
 
 
-## 🚀 Live Demo
+## Live Demo
 
 **Production URL:**  
 👉 [https://your-vercel-domain.vercel.app/api/assets](https://your-vercel-domain.vercel.app/api/assets)
 
-> *(Replace with your actual deployed URL after Vercel deployment)*
 
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 axpo-drone-data-api/
@@ -44,28 +38,28 @@ axpo-drone-data-api/
 ```
 
 
-## ⚙️ Getting Started Locally
+## Getting Started Locally
 
-### 1. Clone the repo
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/axpo-drone-data-api.git
 cd axpo-drone-data-api
 ```
 
-### 2. Run with Docker
+### 2. Deploy with Docker
 
 ```bash
 docker build -t drone-api .
-docker run -p 5000:5000 drone-api
+docker run -p 8000:8000 drone-api
 ```
 
-### 3. Test locally
+### 3. Test
 
-Visit: [http://localhost:5000/api/assets](http://localhost:5000/api/assets)
+Visit: [http://localhost:8000/api/assets](http://localhost:8000/api/assets)
 
 
-## ☁️ Deploying to Vercel
+## Deploying to Vercel
 
 ### 1. Install the Vercel CLI
 
@@ -77,13 +71,11 @@ npm install -g vercel
 
 ```bash
 vercel login
-vercel --prod
+vercel OR vercel --prod
 ```
 
-Vercel will detect the `Dockerfile` and deploy it as a container.
 
-
-## 🔄 API Endpoint
+## API Endpoint
 
 ### `GET /api/assets`
 
@@ -99,8 +91,7 @@ Returns a list of all assets with metadata.
     "type": "run-of-river",
     "latitude": 46.105880590640965,
     "longitude": 7.809260581732722
-  },
-  ...
+  }
 ]
 ```
 
