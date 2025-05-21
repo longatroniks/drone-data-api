@@ -1,5 +1,5 @@
 
-# Axpo Drone Data API
+# Drone Data API
 
 Simple project that provides a simple REST API to serve asset data from a CSV file. It is built using **Flask**, containerized using **Docker**, and deployed on **Vercel**.
 
@@ -27,7 +27,7 @@ Simple project that provides a simple REST API to serve asset data from a CSV fi
 ## Project Structure
 
 ```
-axpo-drone-data-api/
+drone-data-api/
 ├── app.py              # Flask app
 ├── assets.csv          # Asset data file
 ├── requirements.txt    # Python dependencies
@@ -43,8 +43,8 @@ axpo-drone-data-api/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/axpo-drone-data-api.git
-cd axpo-drone-data-api
+git clone https://github.com/your-username/drone-data-api.git
+cd drone-data-api
 ```
 
 ### 2. Deploy with Docker
